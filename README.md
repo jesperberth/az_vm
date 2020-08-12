@@ -102,7 +102,7 @@ With Multible rules in a loop
         name: jesperberth.az_vm
       vars:
         vmname: "{{ item.vmname }}"
-        virtualnetwork_name "VirtualNetwork"
+        virtualnetwork_name: "VirtualNet"
         networksecuritygroup_name: "SG_Network"
         vmsize: "Standard_A1_v2"
         ostype: "{{ item.ostype }}"

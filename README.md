@@ -78,7 +78,7 @@ Example Playbook
         vmsize: "Standard_A1_v2"
         ostype: "Linux"
         azurevmuser: jesbe
-        azurevmpw: P@ssw0rd
+        azurevmpw: P@ssw0rdToYou788
         offer: "RHEL"
         publisher: "RedHat"
         sku: "8"
@@ -107,7 +107,7 @@ With Multible rules in a loop
         vmsize: "Standard_A1_v2"
         ostype: "{{ item.ostype }}"
         azurevmuser: jesbe
-        azurevmpw: P@ssw0rd
+        azurevmpw: P@ssw0rdToYou788
         offer: "{{ item.offer}}"
         publisher: "{{ item.publisher}}"
         sku: "{{ item.sku}}"

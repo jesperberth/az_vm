@@ -60,14 +60,14 @@ Example Playbook
 ```ansible
 
 - hosts: localhost
-  name: Create Azure Security Group
+  name: Create Azure VM
   vars:
     resourcegroup: resourcegroupname
     location: northeurope
     tag_owner: jesper
     tag_project: demoproject
   tasks:
-    - name: Azure Security Group
+    - name: Azure VM
       include_role:
         name: jesperberth.az_vm
       vars:
@@ -90,14 +90,14 @@ With Multible rules in a loop
 ```ansible
 
 - hosts: localhost
-  name: Create Azure Security Group
+  name: Create Azure VM
   vars:
     resourcegroup: resourcegroupname
     location: northeurope
     tag_owner: jesper
     tag_project: demoproject
   tasks:
-    - name: Azure Security Group
+    - name: Azure VM
       include_role:
         name: jesperberth.az_vm
       vars:
